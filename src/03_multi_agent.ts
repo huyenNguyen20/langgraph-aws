@@ -12,13 +12,11 @@ import { Annotation, END, START, StateGraph } from "@langchain/langgraph";
 import { BaseMessage, HumanMessage, AIMessage } from "@langchain/core/messages";
 import { TavilySearchResults } from "@langchain/community/tools/tavily_search";
 import { tool } from "@langchain/core/tools";
-import * as d3 from "d3";
 // ----------ATTENTION----------
 // If attempting to run this notebook locally, you must follow these instructions
 // to install the necessary system dependencies for the `canvas` package.
 // https://www.npmjs.com/package/canvas#compiling
 // -----------------------------
-import { createCanvas } from "canvas";
 import { z } from "zod";
 import * as tslab from "tslab";
 import { Runnable, RunnableConfig } from "@langchain/core/runnables";

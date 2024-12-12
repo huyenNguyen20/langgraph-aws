@@ -2,12 +2,10 @@ import { config } from "dotenv";
 config();
 
 import { TavilySearchResults } from "@langchain/community/tools/tavily_search";
-import { MemorySaver, MessagesAnnotation, StateGraph } from "@langchain/langgraph";
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
-import { ToolNode, createReactAgent } from "@langchain/langgraph/prebuilt";
+import { MessagesAnnotation, StateGraph } from "@langchain/langgraph";
+import { HumanMessage } from "@langchain/core/messages";
+import { ToolNode } from "@langchain/langgraph/prebuilt";
 import { BedrockChat } from "@langchain/community/chat_models/bedrock";
-
-
 
 // Define the tools for the agent to use
 const agentTools = [new TavilySearchResults({ maxResults: 3 })];
