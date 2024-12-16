@@ -13,3 +13,5 @@
 - populate the .env file
 - run `npx tsx src/{filename}` e.g. npx tsx src/01_simple_graph_agent.ts
 
+## Sources
+- The scripts follows the tutorials in https://langchain-ai.github.io/langgraphjs/tutorials/quickstart/#agent
